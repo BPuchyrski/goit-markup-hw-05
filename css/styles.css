@@ -65,7 +65,18 @@ img {
   text-decoration: none;
   color: var(--black);
 }
-
+a.header-nav__link.active-page {
+  position: relative;
+}
+.active-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -33px;
+  border-bottom: 4px solid var(--blue);
+  border-radius: 2px;
+  width: 100%;
+}
 .header-logo__link--blue {
   color: var(--blue);
 }
