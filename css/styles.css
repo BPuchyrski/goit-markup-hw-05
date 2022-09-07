@@ -87,7 +87,7 @@ a.header-nav__link.active-page {
 .header-nav__link {
   text-decoration: none;
   color: var(--gray);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav__link:hover,
 .header-nav__link:focus {
@@ -128,7 +128,8 @@ a.header-nav__link.active-page {
 .header-contact__link svg {
   text-decoration: none;
   color: var(--lightgray);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact__link:hover,
 .header-contact__link:focus {
@@ -196,7 +197,7 @@ a.header-nav__link.active-page {
 .footer-contact__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact__link:hover,
 .footer-contact__link:focus {
@@ -226,7 +227,7 @@ a.header-nav__link.active-page {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-footer-social-div:last-child {
   margin-right: 0px;
@@ -422,10 +423,10 @@ a.header-nav__link.active-page {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-team-social-div svg {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-team-social-div:hover svg,
 .icon-team-social-div:focus svg {
@@ -457,10 +458,11 @@ a.header-nav__link.active-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__bg-and-border svg {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__bg-and-border:hover svg,
 .clients__bg-and-border:focus svg {
@@ -494,7 +496,9 @@ a.header-nav__link.active-page {
   border: none;
   padding: 6px 22px 6px 22px;
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-nav__item--btn-design:hover,
 .portfolio-nav__item--btn-design:focus {
@@ -535,7 +539,7 @@ a.header-nav__link.active-page {
 .portfolio__item {
   background-color: var(--white);
   max-width: 370px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__img {
   position: relative;
@@ -557,7 +561,7 @@ a.header-nav__link.active-page {
   line-height: 1.55;
   letter-spacing: 0.03em;
   transform: translatey(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__item:hover,
 .portfolio__item:focus {
@@ -583,7 +587,7 @@ a.header-nav__link.active-page {
   height: 100%;
   background-color: #00000033;
   transform: scale(1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
