@@ -218,10 +218,13 @@ a.header-nav__link.active-page {
 }
 .footer__social-icon-div {
   display: flex;
+  list-style: none;
 }
 .footer__icon {
   fill: var(--white);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-footer-social-div {
   padding: 12px;
@@ -230,15 +233,18 @@ a.header-nav__link.active-page {
   margin-right: 10px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-footer-social-div:last-child {
-  margin-right: 0px;
-}
+
 .icon-footer-social-div:hover,
 .icon-footer-social-div:focus {
   background-color: var(--blue);
   cursor: pointer;
 }
-
+.icon-footer-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer-link:focus .icon-footer-social-div {
+  background-color: var(--blue);
+}
 /* index-main */
 .header-main-section {
   background-color: var(--bgcolor);
@@ -416,6 +422,7 @@ a.header-nav__link.active-page {
   padding-right: 32px;
   justify-content: space-between;
   margin-top: 16px;
+  list-style: none;
 }
 .icon-team-social-div {
   width: 44px;
@@ -439,6 +446,16 @@ a.header-nav__link.active-page {
   border-radius: 50%;
   cursor: pointer;
 }
+.icon-team-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-team-link:focus .icon-team-social-div svg {
+  fill: var(--white);
+}
+.icon-team-link:focus .icon-team-social-div {
+  background-color: #2196f3;
+}
 .clients__header {
   font-weight: 700;
   font-size: 36px;
@@ -450,6 +467,7 @@ a.header-nav__link.active-page {
 .clients__div {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .clients__bg-and-border {
   width: 170px;
@@ -474,6 +492,18 @@ a.header-nav__link.active-page {
 .clients__bg-and-border:focus {
   border: 1px solid var(--blue);
   cursor: pointer;
+}
+.clients-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-link:focus .clients__bg-and-border svg {
+  color: var(--blue);
+  fill: #2196f3;
+}
+.clients-link:focus .clients__bg-and-border {
+  border: 1px solid var(--blue);
 }
 /* main-portfolio */
 
